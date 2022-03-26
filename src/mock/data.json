@@ -148,5 +148,20 @@
     "location": "Worldwide",
     "languages": ["JavaScript"],
     "tools": ["React", "Sass"]
+  },
+  {
+    "id": 11,
+    "company": "Gerchik&Co",
+    "logo": "./images/manage.svg",
+    "new": true,
+    "featured": true,
+    "position": "Middle Frontend Developer",
+    "role": "React developer",
+    "level": "Middle",
+    "postedAt": "1d ago",
+    "contract": "Full Time",
+    "location": "Remote",
+    "languages": ["Javascript"],
+    "tools": ["React", "NodeJS"]
   }
 ]
