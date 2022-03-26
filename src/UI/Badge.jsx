@@ -1,7 +1,7 @@
+import { ReactComponent as Remove } from '../assets/images/icon-remove.svg';
 import PropTypes from 'prop-types';
-import {ReactComponent as Remove} from '../assets/images/icon-remove.svg';
 
-const Badge = ({
+export const Badge = ({
   variant = 'basic',
   colorScheme = 'light',
   children,
@@ -19,8 +19,6 @@ const Badge = ({
     )}
   </div>
 );
-
-export {Badge};
 
 Badge.propTypes = {
   variant: PropTypes.oneOf(['basic', 'clearable', 'rounded']),
