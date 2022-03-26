@@ -1,0 +1,1 @@
+export const selectAllFilters = (store) => store.filters;
