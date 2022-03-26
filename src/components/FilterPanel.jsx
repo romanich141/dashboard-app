@@ -1,9 +1,6 @@
-import { Badge } from 'UI/Badge';
-import { Card } from 'UI/Card';
-import { Stack } from 'UI/Stack';
+import { Badge, Card, Stack, } from 'UI';
 
-
-const FilterPanel = () => {
+export const FilterPanel = () => {
   return (
     <Card className="filter-panel">
       <div className="filter-panel-wrapper">
@@ -18,5 +15,3 @@ const FilterPanel = () => {
     </Card>
   )
 }
-
-export {FilterPanel};

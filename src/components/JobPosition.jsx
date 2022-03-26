@@ -1,9 +1,7 @@
+import { Badge, Card, Stack, } from 'UI';
 import PropTypes from 'prop-types';
-import { Badge } from 'UI/Badge';
-import { Card } from 'UI/Card';
-import { Stack } from 'UI/Stack';
 
-const JobPosition = ({
+export const JobPosition = ({
   id,
   company,
   logo,
@@ -72,8 +70,6 @@ const JobPosition = ({
     </Card>
   )
 }
-
-export {JobPosition};
 
 JobPosition.propTypes = {
   id: PropTypes.number,

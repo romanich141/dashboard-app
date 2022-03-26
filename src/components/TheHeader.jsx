@@ -4,4 +4,4 @@ const TheHeader = () => {
   )
 }
 
-export {TheHeader};
+export { TheHeader };
