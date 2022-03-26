@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import { Badge, Card, Stack, } from 'UI';
 import PropTypes from 'prop-types';
 
@@ -15,8 +16,12 @@ export const JobPosition = ({
   location,
   languages,
   tools,
+  handleAddFilter,
 }) => {
   const badges = [].concat(role, level, ...languages, ...tools);
+  const badgeOnClick = useCallback((filter) => {
+    handleAddFilter(filter);
+  }, [])
 
   return (
     <Card isFeatured={featured}>
@@ -63,7 +68,11 @@ export const JobPosition = ({
         </div>
         <Stack>
           {badges.map(item => (
-            <Badge key={item}>{item}</Badge>
+            <Badge
+              key={ item }
+              children={ item }
+              onClick={ () => badgeOnClick(item) }
+            />
           ))}
         </Stack>
       </div>
@@ -85,4 +94,5 @@ JobPosition.propTypes = {
   location: PropTypes.string,
   languages: PropTypes.arrayOf(PropTypes.string),
   tools: PropTypes.arrayOf(PropTypes.string),
+  handleAddFilter: PropTypes.func,
 };
